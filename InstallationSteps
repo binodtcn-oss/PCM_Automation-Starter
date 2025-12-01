@@ -1,0 +1,15 @@
+Prerequisites
+Node.js version 20.x, 22.x, or 24.x installed from nodejs.org.
+Code editor like VS Code with the official Playwright extension for IntelliSense and test runner UI.
+Basic JavaScript/TypeScript knowledge for scripting tests.​
+Installation Steps
+Create a new directory and initialize: mkdir playwright-tests && cd playwright-tests && npm init -y.
+Install Playwright: npm init playwright@latest. This scaffolds the project, installs @playwright/test, browsers, and config files.
+Verify setup: npx playwright --version shows the version; npx playwright install ensures browsers are ready.
+Optional: Add VS Code extension via code --install-extension ms-playwright.playwright.​
+Project Structure
+After init, key files include:
+playwright.config.ts: Configures browsers, reporters, timeouts (default 30s), and test parallelism.
+tests/example.spec.ts: Sample test file with .spec.ts or .test.ts naming convention.
+playwright-report/: Generated HTML reports post-execution.
+test-results/: Screenshots, videos, and traces for debugging.​
